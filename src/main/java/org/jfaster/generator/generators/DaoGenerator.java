@@ -1,8 +1,6 @@
 package org.jfaster.generator.generators;
 
-import org.jfaster.generator.dao.DbDao;
 import org.jfaster.generator.dataobject.TableField;
-import org.jfaster.generator.db.DbUtil;
 import org.jfaster.generator.util.FieldUtil;
 import org.jfaster.generator.util.FileUtil;
 import org.jfaster.generator.util.TemplateUtil;
@@ -25,7 +23,7 @@ public class DaoGenerator {
         paramMap.put("pkFieldName", FieldUtil.columnToField(pk));
         paramMap.put("pkFieldType", getPkType(pk,tableFields));
         String daoStr = TemplateUtil.getTemplateStr("/dao.flt", paramMap);
-        System.out.println(daoStr);
+//        System.out.println(daoStr);
         String daoFile = outputPath + FieldUtil.getClassName(tableName) + "Dao.java";
         FileUtil.mkdirFile(daoFile);
         FileUtil.writer(daoFile, daoStr, false);

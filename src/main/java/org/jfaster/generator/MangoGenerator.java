@@ -3,7 +3,7 @@ package org.jfaster.generator;
 import org.jfaster.generator.dao.DbDao;
 import org.jfaster.generator.dataobject.DbTableName;
 import org.jfaster.generator.dataobject.TableField;
-import org.jfaster.generator.db.DbUtil;
+import org.jfaster.generator.util.DbUtil;
 import org.jfaster.generator.generators.DaoGenerator;
 import org.jfaster.generator.generators.EntityGenerator;
 
@@ -59,6 +59,9 @@ public class MangoGenerator {
                     DaoGenerator.generator(outputPath, tableName, pk, tableFields);
                 }
             }
+            System.out.println("恭喜！！！生成代码成功，我给你打99分，再多1分怕你骄傲！！！");
+            System.out.println("代码文件输出路径：" + outputPath);
+            DbUtil.closeConnection();
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

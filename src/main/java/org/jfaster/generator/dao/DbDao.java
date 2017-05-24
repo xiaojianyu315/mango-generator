@@ -1,15 +1,13 @@
 package org.jfaster.generator.dao;
 
 import org.jfaster.generator.dataobject.DbTableName;
-import org.jfaster.generator.dataobject.Table;
 import org.jfaster.generator.dataobject.TableField;
-import org.jfaster.generator.db.DbUtil;
+import org.jfaster.generator.util.DbUtil;
 import org.jfaster.generator.util.FieldUtil;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
