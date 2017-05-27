@@ -194,6 +194,7 @@ ServerGatherRecordDao.java
 ```java
 import org.jfaster.mango.annotation.DB;
 import org.jfaster.mango.annotation.SQL;
+import org.jfaster.mango.annotation.ReturnGeneratedId;
 
 @DB(
         table = "server_gather_record"
@@ -203,8 +204,9 @@ public interface ServerGatherRecordDao {
     String BASE_COLUMNS = " id, server_id, gather_type, gather_time, total, free, used, create_time, update_time ";
     String VALUES_COLUMNS = " :id, :serverId, :gatherType, :gatherTime, :total, :free, :used, :createTime, :updateTime ";
 
+    @ReturnGeneratedId
     @SQL("insert into #table(" + BASE_COLUMNS + ") values(" + VALUES_COLUMNS + ")")
-    boolean insert(ServerGatherRecord object);
+    long insert(ServerGatherRecord object);
 
     @SQL("select " + BASE_COLUMNS + " from #table where id = :1")
     ServerGatherRecord selectByPrimaryKey(Long id);
