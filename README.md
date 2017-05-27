@@ -19,7 +19,7 @@ jfaster mango官方网站：[http://www.jfaster.org/]
 1. 对单个表或单个库进行DO的生成
 2. 对单个表或单个库进行DAO的生成
 3. DAO生成由于jfaster mango还没有trim函数，暂不能生成类似mybatis的insertSelective和updateByPrimaryKeySelective的方法，这个会在添加了trim标签以后增加
-4. 此版本DAO只做了未分表的生成，对于sharing的注解未支持，需要自行添加，会在后续添加上
+4. 此版本DAO只做了未分表的生成，对于sharding的注解未支持，需要自行添加，会在后续添加上
 5. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
 
 ### 注意事项
