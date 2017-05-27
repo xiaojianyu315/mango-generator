@@ -22,6 +22,8 @@ jfaster mango官方网站：[http://www.jfaster.org/]
 4. 此版本DAO只做了未分表的生成，对于sharing的注解未支持，需要自行添加，会在后续添加上
 5. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
 
+### 注意事项
+1. 此工具默认你的表是有主键的，如果没有设置主键selectByPrimaryKey、updateByPrimaryKey方法将会默认使用"id"字段作为这些方法的参数
 ### 遇到问题怎么办
 1. 遇到问题直接在github上面提bug，然后在群里（445124187）说一下，@ゞ安❤分-
 2. 或者直接在群里直接@ゞ安❤分-

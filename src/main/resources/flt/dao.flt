@@ -1,5 +1,6 @@
 import org.jfaster.mango.annotation.DB;
 import org.jfaster.mango.annotation.SQL;
+import org.jfaster.mango.annotation.ReturnGeneratedId;
 
 @DB(
         table = "${tableName}"
@@ -15,8 +16,9 @@ public interface ${className}Dao {
     String BASE_COLUMNS = "${BASE_COLUMNS?substring(1,BASE_COLUMNS?length)} ";
     String VALUES_COLUMNS = "${VALUES_COLUMNS?substring(0,VALUES_COLUMNS?length-2)} ";
 
+    @ReturnGeneratedId
     @SQL("insert into #table(" + BASE_COLUMNS + ") values(" + VALUES_COLUMNS + ")")
-    boolean insert(${className} object);
+    long insert(${className} object);
 
     @SQL("select " + BASE_COLUMNS + " from #table where ${pk} = :1")
     ${className} selectByPrimaryKey(${pkFieldType} ${pkFieldName});
