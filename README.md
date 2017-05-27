@@ -29,7 +29,7 @@ jfaster mango官方网站：[http://www.jfaster.org/]
 2. 或者直接在群里直接@ゞ安❤分-
 
 ### 使用方式
-1. 下载mango-gererator-1.0.jar、freemarker 、mysql
+1. 把lib目录下mango-gererator-1.0.jar、freemarker 、mysql下载下来
 2. 下载后的jar放入工程的classpath下
 3. 运行如下代码：
 ```java
