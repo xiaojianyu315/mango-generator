@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c7eb076-f756-4ed2-a19e-d1cdf2239fae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/flt/dao_backup.flt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/flt/dao.flt" afterPath="$PROJECT_DIR$/src/main/resources/flt/dao.flt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,9 +25,35 @@
       <file leaf-file-name="MangoGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/MangoGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="860">
+              <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2891#2892#0" expanded="false" />
+                <element signature="e#2917#2918#0" expanded="false" />
+                <element signature="e#2955#2956#0" expanded="false" />
+                <element signature="e#2985#2986#0" expanded="false" />
+                <element signature="e#3020#3021#0" expanded="false" />
+                <element signature="e#3051#3052#0" expanded="false" />
+                <element signature="e#3099#3100#0" expanded="false" />
+                <element signature="e#3139#3140#0" expanded="false" />
+                <element signature="e#3174#3175#0" expanded="false" />
+                <element signature="e#3205#3206#0" expanded="false" />
+                <element signature="e#3253#3254#0" expanded="false" />
+                <element signature="e#3293#3294#0" expanded="false" />
+                <element signature="e#3326#3327#0" expanded="false" />
+                <element signature="e#3355#3356#0" expanded="false" />
+                <element signature="e#3399#3400#0" expanded="false" />
+                <element signature="e#3435#3436#0" expanded="false" />
+                <element signature="e#3471#3472#0" expanded="false" />
+                <element signature="e#3503#3504#0" expanded="false" />
+                <element signature="e#3553#3554#0" expanded="false" />
+                <element signature="e#3595#3596#0" expanded="false" />
+                <element signature="e#3632#3633#0" expanded="false" />
+                <element signature="e#3665#3666#0" expanded="false" />
+                <element signature="e#3717#3718#0" expanded="false" />
+                <element signature="e#3761#3762#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,62 +62,60 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="179" column="0" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+              <first_editor relative-caret-position="560">
+                <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
                 <folding>
-                  <marker date="1495616152000" expanded="true" signature="361:714" ph="{...}" />
-                  <marker date="1495616152000" expanded="true" signature="775:845" ph="..." />
-                  <marker date="1495616152000" expanded="true" signature="847:885" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="948:987" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1014:1065" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1098:1166" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1204:1256" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1291:1335" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1365:1409" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1438:1483" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1512:1564" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1599:1651" ph="/**...*/" />
-                  <marker date="1495616152000" expanded="true" signature="1713:1724" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="1737:1743" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="1768:1779" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="1789:1795" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="1839:1850" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="1875:1881" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="1912:1923" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="1939:1945" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="1996:2007" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2036:2042" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2078:2089" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2107:2113" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2161:2172" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2201:2207" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2240:2251" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2269:2275" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2313:2324" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2343:2349" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2377:2388" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2401:2407" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2443:2454" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2471:2477" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2504:2515" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2527:2533" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2569:2580" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2597:2603" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2630:2641" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2653:2659" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2707:2718" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2747:2753" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2786:2797" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2815:2821" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2869:2880" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2909:2915" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="2948:2959" ph=" { " />
-                  <marker date="1495616152000" expanded="true" signature="2977:2983" ph=" }" />
-                  <marker date="1495616152000" expanded="true" signature="3033:3106" ph="..." />
-                  <marker date="1495616152000" expanded="true" signature="3108:3153" ph="@{...}" />
-                  <marker date="1495616152000" expanded="true" signature="3568:4548" ph="@{...}" />
-                  <marker date="1495616152000" expanded="true" signature="4729:5083" ph="@{...}" />
-                  <marker date="1495616152000" expanded="true" signature="5148:5724" ph="@{...}" />
+                  <marker date="1495849175000" expanded="true" signature="731:1084" ph="{...}" />
+                  <marker date="1495849175000" expanded="true" signature="1145:1215" ph="..." />
+                  <marker date="1495849175000" expanded="true" signature="1217:1255" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1318:1357" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1384:1435" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1468:1536" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1574:1626" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1661:1705" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1735:1779" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1808:1853" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1882:1934" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="1969:2021" ph="/**...*/" />
+                  <marker date="1495849175000" expanded="true" signature="2083:2094" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2107:2113" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2138:2149" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2159:2165" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2209:2220" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2245:2251" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2282:2293" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2309:2315" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2366:2377" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2406:2412" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2448:2459" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2477:2483" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2531:2542" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2571:2577" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2610:2621" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2639:2645" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2683:2694" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2713:2719" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2747:2758" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2771:2777" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2813:2824" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2841:2847" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2874:2885" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2897:2903" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="2939:2950" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="2967:2973" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="3000:3011" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="3023:3029" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="3077:3088" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="3117:3123" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="3156:3167" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="3185:3191" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="3239:3250" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="3279:3285" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="3318:3329" ph=" { " />
+                  <marker date="1495849175000" expanded="true" signature="3347:3353" ph=" }" />
+                  <marker date="1495849175000" expanded="true" signature="3403:3476" ph="..." />
+                  <marker date="1495849175000" expanded="true" signature="3478:3523" ph="@{...}" />
+                  <marker date="1495849175000" expanded="true" signature="4060:4417" ph="@{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -97,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/dao/DbDao.java">
+      <file leaf-file-name="DbUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/DbUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="460">
+              <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -109,22 +135,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/DbUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EntityGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/EntityGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="340">
               <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,9 +150,11 @@
       <file leaf-file-name="DaoGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/DaoGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="380">
               <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,6 +165,8 @@
             <state relative-caret-position="220">
               <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="38" />
               <folding>
+                <element signature="e#1126#1127#0" expanded="false" />
+                <element signature="e#1185#1186#0" expanded="false" />
                 <element signature="e#1231#1232#0" expanded="false" />
                 <element signature="e#1306#1307#0" expanded="false" />
               </folding>
@@ -155,8 +177,18 @@
       <file leaf-file-name="dao.flt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/flt/dao.flt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="67" column="10" lean-forward="false" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+            <state relative-caret-position="290">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dao_backup.flt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/flt/dao_backup.flt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="38" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -165,7 +197,7 @@
       <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/jfaster/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="280">
               <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
             </state>
@@ -224,12 +256,13 @@
         <option value="$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jfaster/generator/db/DbUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jfaster/generator/dao/DbDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/flt/dao.flt" />
         <option value="$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/DbUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/DaoGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/EntityGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jfaster/generator/MangoGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/jfaster/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/flt/dao_backup.flt" />
+        <option value="$PROJECT_DIR$/src/main/resources/flt/dao.flt" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -327,7 +360,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,6 +370,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mango-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mango-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mango-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,146 +456,18 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dataobject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mango-generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -994,8 +913,36 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="mango-generator [clean]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="package" />
+                <option value="-Dmaven.test.skip=true" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.AppTest" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.mango-generator [clean]" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -1014,7 +961,11 @@
       <option name="presentableId" value="Default" />
       <updated>1495455413441</updated>
       <workItem from="1495455416761" duration="29150000" />
-      <workItem from="1495595747441" duration="5486000" />
+      <workItem from="1495595747441" duration="5627000" />
+      <workItem from="1495616429878" duration="253000" />
+      <workItem from="1495697424938" duration="264000" />
+      <workItem from="1495697792609" duration="129000" />
+      <workItem from="1495780039964" duration="3089000" />
     </task>
     <task id="LOCAL-00001" summary="精简代码，完善文档">
       <created>1495615279169</created>
@@ -1023,14 +974,21 @@
       <option name="project" value="LOCAL" />
       <updated>1495615279169</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="精简代码，完善文档">
+      <created>1495616163740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495616163740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34636000" />
+    <option name="totallyTimeSpent" value="38512000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="962" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="962" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1041,14 +999,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.171459" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4514218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.171459" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.101895735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1093,11 +1051,268 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/EntityGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/DaoGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/FieldUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#1126#1127#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1306#1307#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/flt/dao.flt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="67" column="10" lean-forward="false" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/jfaster/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/flt/entity.flt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/MangoGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2891#2892#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#2955#2956#0" expanded="false" />
+            <element signature="e#2985#2986#0" expanded="false" />
+            <element signature="e#3020#3021#0" expanded="false" />
+            <element signature="e#3051#3052#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="false" />
+            <element signature="e#3139#3140#0" expanded="false" />
+            <element signature="e#3174#3175#0" expanded="false" />
+            <element signature="e#3205#3206#0" expanded="false" />
+            <element signature="e#3253#3254#0" expanded="false" />
+            <element signature="e#3293#3294#0" expanded="false" />
+            <element signature="e#3326#3327#0" expanded="false" />
+            <element signature="e#3355#3356#0" expanded="false" />
+            <element signature="e#3399#3400#0" expanded="false" />
+            <element signature="e#3435#3436#0" expanded="false" />
+            <element signature="e#3471#3472#0" expanded="false" />
+            <element signature="e#3503#3504#0" expanded="false" />
+            <element signature="e#3553#3554#0" expanded="false" />
+            <element signature="e#3595#3596#0" expanded="false" />
+            <element signature="e#3632#3633#0" expanded="false" />
+            <element signature="e#3665#3666#0" expanded="false" />
+            <element signature="e#3717#3718#0" expanded="false" />
+            <element signature="e#3761#3762#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1495849175000" expanded="true" signature="731:1084" ph="{...}" />
+              <marker date="1495849175000" expanded="true" signature="1145:1215" ph="..." />
+              <marker date="1495849175000" expanded="true" signature="1217:1255" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1318:1357" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1384:1435" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1468:1536" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1574:1626" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1661:1705" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1735:1779" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1808:1853" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1882:1934" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1969:2021" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="2083:2094" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2107:2113" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2138:2149" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2159:2165" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2209:2220" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2245:2251" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2282:2293" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2309:2315" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2366:2377" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2406:2412" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2448:2459" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2477:2483" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2531:2542" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2571:2577" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2610:2621" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2639:2645" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2683:2694" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2713:2719" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2747:2758" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2771:2777" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2813:2824" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2841:2847" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2874:2885" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2897:2903" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2939:2950" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2967:2973" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3000:3011" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3023:3029" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3077:3088" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3117:3123" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3156:3167" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3185:3191" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3239:3250" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3279:3285" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3318:3329" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3347:3353" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3403:3476" ph="..." />
+              <marker date="1495849175000" expanded="true" signature="3478:3523" ph="@{...}" />
+              <marker date="1495849175000" expanded="true" signature="4060:4417" ph="@{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/dao/DbDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/DbUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/EntityGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/DaoGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/FieldUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#1126#1127#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1306#1307#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/flt/dao.flt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="67" column="10" lean-forward="false" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/jfaster/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/flt/entity.flt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/MangoGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="980">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2891#2892#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#2955#2956#0" expanded="false" />
+            <element signature="e#2985#2986#0" expanded="false" />
+            <element signature="e#3020#3021#0" expanded="false" />
+            <element signature="e#3051#3052#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="false" />
+            <element signature="e#3139#3140#0" expanded="false" />
+            <element signature="e#3174#3175#0" expanded="false" />
+            <element signature="e#3205#3206#0" expanded="false" />
+            <element signature="e#3253#3254#0" expanded="false" />
+            <element signature="e#3293#3294#0" expanded="false" />
+            <element signature="e#3326#3327#0" expanded="false" />
+            <element signature="e#3355#3356#0" expanded="false" />
+            <element signature="e#3399#3400#0" expanded="false" />
+            <element signature="e#3435#3436#0" expanded="false" />
+            <element signature="e#3471#3472#0" expanded="false" />
+            <element signature="e#3503#3504#0" expanded="false" />
+            <element signature="e#3553#3554#0" expanded="false" />
+            <element signature="e#3595#3596#0" expanded="false" />
+            <element signature="e#3632#3633#0" expanded="false" />
+            <element signature="e#3665#3666#0" expanded="false" />
+            <element signature="e#3717#3718#0" expanded="false" />
+            <element signature="e#3761#3762#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1115,7 +1330,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,7 +1340,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1131,7 +1350,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,6 +1361,8 @@
         <state relative-caret-position="220">
           <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="38" />
           <folding>
+            <element signature="e#1126#1127#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
             <element signature="e#1231#1232#0" expanded="false" />
             <element signature="e#1306#1307#0" expanded="false" />
           </folding>
@@ -1187,7 +1410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="203" column="29" lean-forward="false" selection-start-line="203" selection-start-column="29" selection-end-line="203" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,18 +1417,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="199" column="6" lean-forward="false" selection-start-line="199" selection-start-column="6" selection-end-line="199" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mango-generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mango-generator.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/config-test.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/dataobject/DbTableName.java">
@@ -1308,56 +1522,98 @@
         <state relative-caret-position="220">
           <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="38" />
           <folding>
+            <element signature="e#1126#1127#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
             <element signature="e#1231#1232#0" expanded="false" />
             <element signature="e#1306#1307#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/flt/dao.flt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="67" column="10" lean-forward="false" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/util/DbUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
+        <state relative-caret-position="460">
           <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/DaoGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="380">
           <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/generators/EntityGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="340">
           <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jfaster/generator/MangoGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="860">
+          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2891#2892#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#2955#2956#0" expanded="false" />
+            <element signature="e#2985#2986#0" expanded="false" />
+            <element signature="e#3020#3021#0" expanded="false" />
+            <element signature="e#3051#3052#0" expanded="false" />
+            <element signature="e#3099#3100#0" expanded="false" />
+            <element signature="e#3139#3140#0" expanded="false" />
+            <element signature="e#3174#3175#0" expanded="false" />
+            <element signature="e#3205#3206#0" expanded="false" />
+            <element signature="e#3253#3254#0" expanded="false" />
+            <element signature="e#3293#3294#0" expanded="false" />
+            <element signature="e#3326#3327#0" expanded="false" />
+            <element signature="e#3355#3356#0" expanded="false" />
+            <element signature="e#3399#3400#0" expanded="false" />
+            <element signature="e#3435#3436#0" expanded="false" />
+            <element signature="e#3471#3472#0" expanded="false" />
+            <element signature="e#3503#3504#0" expanded="false" />
+            <element signature="e#3553#3554#0" expanded="false" />
+            <element signature="e#3595#3596#0" expanded="false" />
+            <element signature="e#3632#3633#0" expanded="false" />
+            <element signature="e#3665#3666#0" expanded="false" />
+            <element signature="e#3717#3718#0" expanded="false" />
+            <element signature="e#3761#3762#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/jfaster/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="280">
           <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/flt/dao_backup.flt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="38" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/flt/dao.flt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1365,62 +1621,60 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="179" column="0" lean-forward="true" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <first_editor relative-caret-position="560">
+            <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
             <folding>
-              <marker date="1495616152000" expanded="true" signature="361:714" ph="{...}" />
-              <marker date="1495616152000" expanded="true" signature="775:845" ph="..." />
-              <marker date="1495616152000" expanded="true" signature="847:885" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="948:987" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1014:1065" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1098:1166" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1204:1256" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1291:1335" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1365:1409" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1438:1483" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1512:1564" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1599:1651" ph="/**...*/" />
-              <marker date="1495616152000" expanded="true" signature="1713:1724" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="1737:1743" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="1768:1779" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="1789:1795" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="1839:1850" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="1875:1881" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="1912:1923" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="1939:1945" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="1996:2007" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2036:2042" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2078:2089" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2107:2113" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2161:2172" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2201:2207" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2240:2251" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2269:2275" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2313:2324" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2343:2349" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2377:2388" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2401:2407" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2443:2454" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2471:2477" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2504:2515" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2527:2533" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2569:2580" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2597:2603" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2630:2641" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2653:2659" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2707:2718" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2747:2753" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2786:2797" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2815:2821" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2869:2880" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2909:2915" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="2948:2959" ph=" { " />
-              <marker date="1495616152000" expanded="true" signature="2977:2983" ph=" }" />
-              <marker date="1495616152000" expanded="true" signature="3033:3106" ph="..." />
-              <marker date="1495616152000" expanded="true" signature="3108:3153" ph="@{...}" />
-              <marker date="1495616152000" expanded="true" signature="3568:4548" ph="@{...}" />
-              <marker date="1495616152000" expanded="true" signature="4729:5083" ph="@{...}" />
-              <marker date="1495616152000" expanded="true" signature="5148:5724" ph="@{...}" />
+              <marker date="1495849175000" expanded="true" signature="731:1084" ph="{...}" />
+              <marker date="1495849175000" expanded="true" signature="1145:1215" ph="..." />
+              <marker date="1495849175000" expanded="true" signature="1217:1255" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1318:1357" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1384:1435" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1468:1536" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1574:1626" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1661:1705" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1735:1779" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1808:1853" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1882:1934" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="1969:2021" ph="/**...*/" />
+              <marker date="1495849175000" expanded="true" signature="2083:2094" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2107:2113" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2138:2149" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2159:2165" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2209:2220" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2245:2251" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2282:2293" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2309:2315" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2366:2377" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2406:2412" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2448:2459" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2477:2483" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2531:2542" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2571:2577" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2610:2621" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2639:2645" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2683:2694" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2713:2719" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2747:2758" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2771:2777" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2813:2824" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2841:2847" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2874:2885" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2897:2903" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="2939:2950" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="2967:2973" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3000:3011" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3023:3029" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3077:3088" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3117:3123" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3156:3167" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3185:3191" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3239:3250" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3279:3285" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3318:3329" ph=" { " />
+              <marker date="1495849175000" expanded="true" signature="3347:3353" ph=" }" />
+              <marker date="1495849175000" expanded="true" signature="3403:3476" ph="..." />
+              <marker date="1495849175000" expanded="true" signature="3478:3523" ph="@{...}" />
+              <marker date="1495849175000" expanded="true" signature="4060:4417" ph="@{...}" />
             </folding>
           </first_editor>
           <second_editor />

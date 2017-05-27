@@ -1,7 +1,7 @@
 # mango-generator
 ### 简介
 
-jfaster mango官方网站：
+jfaster mango官方网站：[http://www.jfaster.org/]
 
 本项目是jfaster mango分库分表中间件代码生成器.
 此工具可以方便的生成mango需要的数据对象(DO)和数据访问层对象(DAO)
@@ -14,6 +14,17 @@ jfaster mango官方网站：
 ### jar包依赖
 1. freemarker2.3.x
 2. mysql驱动包
+
+### V1.0能做什么，不能做什么
+1. 对单个表或单个库进行DO的生成
+2. 对单个表或单个库进行DAO的生成
+3. DAO生成由于jfaster mango还没有trim函数，暂不能生成类似mybatis的insertSelective和updateByPrimaryKeySelective的方法，这个会在添加了trim标签以后增加
+4. 此版本DAO只做了未分表的生成，对于sharing的注解未支持，需要自行添加，会在后续添加上
+5. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
+
+### 遇到问题怎么办
+1. 遇到问题直接在github上面提bug，然后在群里（445124187）说一下，@ゞ安❤分-
+2. 或者直接在群里直接@ゞ安❤分-
 
 ### 使用方式
 1. 下载mango-gererator-1.0.jar、freemarker 、mysql
@@ -187,41 +198,17 @@ import org.jfaster.mango.annotation.SQL;
 )
 public interface ServerGatherRecordDao {
 
-    String BASE_COLUMNS = " id, server_id, gather_type, gather_time, total, free, used, create_time, update_time";
-    String VALUES_COLUMNS = ":id, :serverId, :gatherType, :gatherTime, :total, :free, :used, :createTime, :updateTime";
+    String BASE_COLUMNS = " id, server_id, gather_type, gather_time, total, free, used, create_time, update_time ";
+    String VALUES_COLUMNS = " :id, :serverId, :gatherType, :gatherTime, :total, :free, :used, :createTime, :updateTime ";
 
     @SQL("insert into #table(" + BASE_COLUMNS + ") values(" + VALUES_COLUMNS + ")")
     boolean insert(ServerGatherRecord object);
-
-    @SQL(
-        "insert into #table ( "
-        + " #if(:id != null) id, #end "
-        + " #if(:serverId != null) server_id, #end "
-        + " #if(:gatherType != null) gather_type, #end "
-        + " #if(:gatherTime != null) gather_time, #end "
-        + " #if(:total != null) total, #end "
-        + " #if(:free != null) free, #end "
-        + " #if(:used != null) used, #end "
-        + " #if(:createTime != null) create_time, #end "
-        + " #if(:updateTime != null) update_time #end "
-        + " ) values( "
-        + " #if(:id != null) :id, #end "
-        + " #if(:serverId != null) :serverId, #end "
-        + " #if(:gatherType != null) :gatherType, #end "
-        + " #if(:gatherTime != null) :gatherTime, #end "
-        + " #if(:total != null) :total, #end "
-        + " #if(:free != null) :free, #end "
-        + " #if(:used != null) :used, #end "
-        + " #if(:createTime != null) :createTime, #end "
-        + " #if(:updateTime != null) :updateTime #end )"
-    )
-    boolean insertSelective(ServerGatherRecord object);
 
     @SQL("select " + BASE_COLUMNS + " from #table where id = :1")
     ServerGatherRecord selectByPrimaryKey(Long id);
 
     @SQL(
-        "update #table set "
+          " update #table set "
         + " server_id = :serverId, "
         + " gather_type = :gatherType, "
         + " gather_time = :gatherTime, "
@@ -233,20 +220,6 @@ public interface ServerGatherRecordDao {
         + " where id = :id"
     )
     boolean updateByPrimaryKey(ServerGatherRecord object);
-
-    @SQL(
-        "update #table set "
-        + " #if(:serverId != null) server_id = :serverId, #end "
-        + " #if(:gatherType != null) gather_type = :gatherType, #end "
-        + " #if(:gatherTime != null) gather_time = :gatherTime, #end "
-        + " #if(:total != null) total = :total, #end "
-        + " #if(:free != null) free = :free, #end "
-        + " #if(:used != null) used = :used, #end "
-        + " #if(:createTime != null) create_time = :createTime, #end "
-        + " #if(:updateTime != null) update_time = :updateTime  #end "
-        + " where id = :id"
-    )
-    boolean updateByPrimaryKeySelective(ServerGatherRecord object);
 
     @SQL("delete from #table where id = :1")
     boolean deletesByPrimaryKey(Long id);
