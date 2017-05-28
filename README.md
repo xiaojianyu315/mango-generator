@@ -16,14 +16,16 @@ jfaster mango官方网站：[http://www.jfaster.org/]
 2. mysql驱动包
 
 ### V1.0能做什么，不能做什么
-1. 对单个表或单个库进行DO的生成
-2. 对单个表或单个库进行DAO的生成
-3. DAO生成由于jfaster mango还没有trim函数，暂不能生成类似mybatis的insertSelective和updateByPrimaryKeySelective的方法，这个会在添加了trim标签以后增加
-4. 此版本DAO只做了未分表的生成，对于sharding的注解未支持，需要自行添加，会在后续添加上
-5. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
+1. 目前只支持mysql
+2. 对单个表或单个库进行DO的生成
+3. 对单个表或单个库进行DAO的生成
+4. DAO生成由于jfaster mango还没有trim函数，暂不能生成类似mybatis的insertSelective和updateByPrimaryKeySelective的方法，这个会在添加了trim标签以后增加
+5. 此版本DAO只做了未分表的生成，对于sharding的注解未支持，需要自行添加，会在后续添加上
+6. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
 
 ### 注意事项
 1. 此工具默认你的表是有主键的，如果没有设置主键selectByPrimaryKey、updateByPrimaryKey方法将会默认使用"id"字段作为这些方法的参数
+
 ### 遇到问题怎么办
 1. 遇到问题直接在github上面提bug，然后在群里（445124187）说一下，@ゞ安❤分-
 2. 或者直接在群里直接@ゞ安❤分-
