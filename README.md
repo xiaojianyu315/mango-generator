@@ -1,5 +1,5 @@
 # mango-generator
-### 简介
+## 简介
 
 jfaster mango官方网站：[http://www.jfaster.org/]
 
@@ -9,25 +9,25 @@ jfaster mango官方网站：[http://www.jfaster.org/]
 此工具还提供了一个分库分表sql生成的工具，它可以根据单个sql文件生成具体规则的sql脚本（比如N个库，每个库N张表）
 
 
-### 环境依赖
+## 环境依赖
 1. jdk1.7(推荐)，1.6未测试
 2. maven
 
-### 注意事项
+## 注意事项
 1. 项目将不采用发行jar包的形式，如果您想使用，您可以下载本项目源码，运行具体类的main方法使用，也是很方便的
 2. 此工具默认你的表是有主键的，如果没有设置主键selectByPrimaryKey、updateByPrimaryKey方法将会默认使用"id"字段作为这些方法的参数
 
-### V1.0能做什么，不能做什么
+## V1.0能做什么，不能做什么
 1. 对库进行DO、DAO生成（可指定单个表，不指定则生成整个库）
 2. DAO生成由于jfaster mango还没有trim函数，暂不能生成类似mybatis的insertSelective和updateByPrimaryKeySelective的方法，这个会在添加了trim标签以后增加
 3. 此版本DAO只做了未分表的生成，对于sharding的注解未支持，需要自行添加，会在后续添加上
 4. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
 
-### 遇到问题怎么办
+## 遇到问题怎么办
 1. 遇到问题直接在github上面提bug，然后在群里（445124187）说一下，@ゞ安❤分-
 2. 或者直接在群里直接@ゞ安❤分-
 
-### 以下是代码生成的使用方式
+## 以下是代码生成的使用方式
 1. 下载项目代码
 2. test目录下有AppTest类，运行如下代码：
 ```java
@@ -228,10 +228,10 @@ public interface ServerGatherRecordDao {
 }
 ```
 
-### 分库分表sql生成的规则适用场景
+## 分库分表sql生成的规则适用场景
 1. 以用户id（userId）为例，userId % 表总数 == 表索引；userId % 表总数 / 库总数 == 库索引
 
-### 以下是分库分表sql生成器的使用方式 
+## 以下是分库分表sql生成器的使用方式 
 1. 找到org.jfaster.generator.ShardTableSqlGenerator类，此类就是分库分表sql脚本生成器代码，就一个main方法，运行即可，前提是记得修改常量的路径
 ```java
     /**
