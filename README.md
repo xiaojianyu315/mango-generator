@@ -27,7 +27,7 @@ jfaster mango官方网站：[http://www.jfaster.org/]
 1. 遇到问题直接在github上面提bug，然后在群里（445124187）说一下，@ゞ安❤分-
 2. 或者直接在群里直接@ゞ安❤分-
 
-### 使用方式
+### 以下是代码生成的使用方式
 1. 下载项目代码
 2. test目录下有AppTest类，运行如下代码：
 ```java
@@ -226,4 +226,343 @@ public interface ServerGatherRecordDao {
     @SQL("delete from #table where id = :1")
     boolean deletesByPrimaryKey(Long id);
 }
+```
+
+
+
+### 以下是分库分表sql生成器的使用方式
+1. 找到org.jfaster.generator.ShardTableSqlGenerator类，此类就是分库分表sql脚本生成器代码，就一个main方法，运行即可，前提是记得修改常量的路径
+```java
+    /**
+     * 逻辑表路径
+     */
+    private static final String logic_table_input_file = "/Users/xiaojianyu/IdeaProjects/mango-generator/db/table_logic.sql";
+    /**
+     * 分库分表全部总表的输出路径
+     */
+    private static final String all_sql_output_file = "/Users/xiaojianyu/IdeaProjects/mango-generator/db/table_logic_all.sql";
+    /**
+     * 分库分表独立表的输出路径
+     */
+    private static final String shard_sql_output_path = "/Users/xiaojianyu/IdeaProjects/mango-generator/db/logic_tables/";
+    /**
+     * 库前缀，用于生成USE，切换库命令
+     */
+    private static final String db_prefix = "lc_";
+    /**
+     * 库的数量
+     */
+    private static final int db_count = 2;
+    /**
+     * 每个库表的数量
+     */
+    private static final int every_db_table_count = 2;
+
+```
+
+2. 找到db/table_logic.sql,在里面编写你的普通sql，多个表使用"==="3个等号分割，比如：
+```sql
+
+CREATE TABLE lc_a (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+===
+
+CREATE TABLE lc_b (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+```
+
+3. 上面定义了2张表，运行ShardTableSqlGenerator类main方法后即可生成分库分表的sql脚本，这里演示的是分2个库，每个库有2张表的情况，会成功3个文件，一个是包含了全部sql命令的文件，另外2个是每张表对应的sql命令的文件
+
+table_logic_all.sql 是全部sql的脚本，适合统一创建库表
+
+```sql
+USE lc_0;
+
+CREATE TABLE lc_a_0 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+CREATE TABLE lc_a_1 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+USE lc_1;
+
+CREATE TABLE lc_a_2 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+CREATE TABLE lc_a_3 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+USE lc_0;
+
+
+CREATE TABLE lc_b_0 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+
+CREATE TABLE lc_b_1 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+USE lc_1;
+
+
+CREATE TABLE lc_b_2 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+
+CREATE TABLE lc_b_3 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+
+```
+
+lc_a.sql
+
+```sql
+USE lc_0;
+
+CREATE TABLE lc_a_0 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+CREATE TABLE lc_a_1 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+USE lc_1;
+
+CREATE TABLE lc_a_2 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+CREATE TABLE lc_a_3 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+```
+
+lc_b.sql
+```sql
+USE lc_0;
+
+
+CREATE TABLE lc_b_0 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+
+CREATE TABLE lc_b_1 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+USE lc_1;
+
+
+CREATE TABLE lc_b_2 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+
+CREATE TABLE lc_b_3 (
+  id bigint(20) NOT NULL COMMENT 'id',
+  login_name varchar(200) NOT NULL COMMENT '登录名',
+  login_pwd varchar(200) DEFAULT NULL COMMENT '登录密码',
+  member_id bigint(20) NOT NULL COMMENT '用户id',
+  create_time datetime NOT NULL COMMENT '创建时间',
+  update_time datetime NOT NULL COMMENT '更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY login_name (login_name) USING BTREE,
+  KEY member_id (member_id) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+
+
+
+
+
 ```

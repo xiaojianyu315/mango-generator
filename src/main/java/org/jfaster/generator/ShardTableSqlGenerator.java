@@ -30,11 +30,11 @@ public class ShardTableSqlGenerator {
     /**
      * 库的数量
      */
-    private static final int db_count = 1;
+    private static final int db_count = 2;
     /**
      * 每个库表的数量
      */
-    private static final int every_db_table_count = 10;
+    private static final int every_db_table_count = 2;
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
