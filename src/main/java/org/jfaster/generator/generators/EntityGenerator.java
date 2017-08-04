@@ -20,7 +20,7 @@ public class EntityGenerator {
         paramMap.put("className", FieldUtil.getClassName(tableName));
         paramMap.put("tableName", tableName);
         paramMap.put("fieldList", tableFields);
-        String doStr = TemplateUtil.getTemplateStr("/entity.flt", paramMap);
+        String doStr = TemplateUtil.getTemplateStr("/entity.ftl", paramMap);
 //        System.out.println(doStr);
         String classFile = outputPath + FieldUtil.getClassName(tableName) + ".java";
         FileUtil.mkdirFile(classFile);

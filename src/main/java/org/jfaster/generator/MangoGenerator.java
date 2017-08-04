@@ -59,7 +59,7 @@ public class MangoGenerator {
                     DaoGenerator.generator(outputPath, tableName, pk, tableFields);
                 }
             }
-            System.out.println("恭喜！！！生成代码成功，老铁，稳！！！");
+            System.out.println("恭喜！！！生成代码成功！！！");
             System.out.println("代码文件输出路径：" + outputPath);
             DbUtil.closeConnection();
         } catch (SQLException e) {

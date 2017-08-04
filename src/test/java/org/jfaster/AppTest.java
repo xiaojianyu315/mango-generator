@@ -8,11 +8,11 @@ import org.jfaster.generator.MangoGenerator;
 public class AppTest {
     public static void main(String[] args) {
         MangoGenerator mg = new MangoGenerator(
-                "jdbc:mysql://localhost:3306/jsponge",
+                "jdbc:mysql://localhost:3306/lc",
                 "root",
                 "root",
-                "jsponge",
-                "",
+                "lc",
+                "lc_member_0",
                 "/Users/xiaojianyu/Downloads/");
         mg.generator();
     }

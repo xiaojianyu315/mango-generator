@@ -22,7 +22,7 @@ public class DaoGenerator {
         paramMap.put("pk", pk);
         paramMap.put("pkFieldName", FieldUtil.columnToField(pk));
         paramMap.put("pkFieldType", getPkType(pk,tableFields));
-        String daoStr = TemplateUtil.getTemplateStr("/dao.flt", paramMap);
+        String daoStr = TemplateUtil.getTemplateStr("/dao.ftl", paramMap);
 //        System.out.println(daoStr);
         String daoFile = outputPath + FieldUtil.getClassName(tableName) + "Dao.java";
         FileUtil.mkdirFile(daoFile);
