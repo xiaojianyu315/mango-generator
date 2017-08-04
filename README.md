@@ -228,9 +228,10 @@ public interface ServerGatherRecordDao {
 }
 ```
 
+### 分库分表sql生成的规则适用场景
+1. 以用户id（userId）为例，userId % 表总数 == 表索引；userId % 表总数 / 库总数 == 库索引
 
-
-### 以下是分库分表sql生成器的使用方式
+### 以下是分库分表sql生成器的使用方式 
 1. 找到org.jfaster.generator.ShardTableSqlGenerator类，此类就是分库分表sql脚本生成器代码，就一个main方法，运行即可，前提是记得修改常量的路径
 ```java
     /**
