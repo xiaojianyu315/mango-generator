@@ -6,34 +6,30 @@ jfaster mango官方网站：[http://www.jfaster.org/]
 本项目是jfaster mango分库分表中间件代码生成器.
 此工具可以方便的生成mango需要的数据对象(DO)和数据访问层对象(DAO)
 
+此工具还提供了一个分库分表sql生成的工具，它可以根据单个sql文件生成具体规则的sql脚本（比如N个库，每个库N张表）
 
 
 ### 环境依赖
 1. jdk1.7(推荐)，1.6未测试
-
-### jar包依赖
-1. freemarker2.3.x
-2. mysql驱动包
-
-### V1.0能做什么，不能做什么
-1. 目前只支持mysql
-2. 对单个表或单个库进行DO的生成
-3. 对单个表或单个库进行DAO的生成
-4. DAO生成由于jfaster mango还没有trim函数，暂不能生成类似mybatis的insertSelective和updateByPrimaryKeySelective的方法，这个会在添加了trim标签以后增加
-5. 此版本DAO只做了未分表的生成，对于sharding的注解未支持，需要自行添加，会在后续添加上
-6. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
+2. maven
 
 ### 注意事项
-1. 此工具默认你的表是有主键的，如果没有设置主键selectByPrimaryKey、updateByPrimaryKey方法将会默认使用"id"字段作为这些方法的参数
+1. 项目将不采用发行jar包的形式，如果您想使用，您可以下载本项目源码，运行具体类的main方法使用，也是很方便的
+2. 此工具默认你的表是有主键的，如果没有设置主键selectByPrimaryKey、updateByPrimaryKey方法将会默认使用"id"字段作为这些方法的参数
+
+### V1.0能做什么，不能做什么
+1. 对库进行DO、DAO生成（可指定单个表，不指定则生成整个库）
+2. DAO生成由于jfaster mango还没有trim函数，暂不能生成类似mybatis的insertSelective和updateByPrimaryKeySelective的方法，这个会在添加了trim标签以后增加
+3. 此版本DAO只做了未分表的生成，对于sharding的注解未支持，需要自行添加，会在后续添加上
+4. 还能做的就是对jfaster mango尽一些绵薄之力，希望对各位有些帮助
 
 ### 遇到问题怎么办
 1. 遇到问题直接在github上面提bug，然后在群里（445124187）说一下，@ゞ安❤分-
 2. 或者直接在群里直接@ゞ安❤分-
 
 ### 使用方式
-1. 把lib目录下mango-gererator-1.0.jar、freemarker 、mysql下载下来
-2. 下载后的jar放入工程的classpath下
-3. 运行如下代码：
+1. 下载项目代码
+2. test目录下有AppTest类，运行如下代码：
 ```java
 public class AppTest {
     public static void main(String[] args) {
