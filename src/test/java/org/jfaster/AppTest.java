@@ -12,8 +12,8 @@ public class AppTest {
                 "root",
                 "root",
                 "lc",
-                "lc_member_0",
-                "/Users/xiaojianyu/Downloads/");
+                "",
+                "/Users/xiaojianyu/Downloads/1/");
         mg.generator();
     }
 }
